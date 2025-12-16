@@ -207,6 +207,92 @@
     setInterval(() => { plusSlides(1); }, 5000);
   </script>
 
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>En memoria de Juan Francisco Leiva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #fbeeee, #fdfdfd);
+      color: #03045e;
+      text-align: center;
+    }
+    header {
+      background-color: #669bbc;
+      padding: 40px 20px;
+      border-bottom: 2px solid #e7bcbc;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #f8f9fa;
+      margin: 0;
+    }
+    header p { color:#f1f1f1; }
+
+```
+/* ===== VIDEOS ===== */
+.videos {
+  padding: 40px 20px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.video-grid video {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #000;
+}
+```
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>En memoria de Juan Francisco Leiva Vergara</h1>
+    <p>1954 – 2021</p>
+    <p>“Aunque ya no estés físicamente, tu luz nos acompaña cada día.”</p>
+  </header>
+
+  <!-- SECCIÓN DE VIDEOS -->
+
+  <section class="videos">
+    <h2>Recuerdos en video 🎥</h2>
+
+```
+<div class="video-grid">
+  <video controls preload="metadata">
+    <source src="videos/video1.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+
+  <video controls preload="metadata">
+    <source src="videos/video2.mp4" type="video/mp4">
+  </video>
+
+  <video controls preload="metadata">
+    <source src="videos/video3.mp4" type="video/mp4">
+  </video>
+</div>
+```
+
+  </section>
+
+</body>
+</html>
+
+  
   <!-- Música -->
   <h2 class="titulo-musica">Su banda sonora de vida 🎶</h2>
   <iframe style="border-radius:12px"
@@ -282,6 +368,7 @@
   </section>
 </body>
 </html>
+
 
 
 
